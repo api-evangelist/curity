@@ -1,23 +1,151 @@
 aid: curity
+
 name: Curity
-description: 'Curity is a company surfaced via the API Evangelist harvest backlog (source: market-layer-gap)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://curity.io/images/open-graph/homepage-sharing-image.jpg?v=20260618
+
+description: Curity is a Stockholm-based identity company whose Curity Identity Server is a self-hosted OAuth 2.0
+  and OpenID Connect server. Its interfaces are the standard OAuth/OIDC endpoints, a RESTCONF administration API,
+  GraphQL user and client management APIs, and SCIM 2.0 user provisioning, all served by each customer deployment
+  rather than a Curity-hosted base URL.
+
 url: https://raw.githubusercontent.com/api-evangelist/curity/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:market-layer-gap
+
 x-tier: stub
+
 x-tier-reason: harvest
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Identity
+- OAuth
+- OpenID Connect
+- Authorization
+- API Security
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://trust.curity.io/
+- type: LLMsTxt
+  url: llms/curity-llms.txt
+- type: Hosts
+  url: hosts/curity-hosts.yml
+- type: TrustCenter
+  url: security/curity-trust-center.yml
+- type: DomainSecurity
+  url: security/curity-domain-security.yml
 - type: Website
   url: https://curity.io
+- type: Documentation
+  url: https://docs.curity.io/
+- type: DeveloperPortal
+  url: https://developer.curity.io/
+- type: Blog
+  url: https://curity.io/blog/
+- type: ChangeLog
+  url: https://curity.io/resources/whats-new/
+- type: GettingStarted
+  url: https://curity.io/resources/getting-started/
+- type: GitHubOrganization
+  url: https://github.com/curityio
+- type: Newsroom
+  url: https://curity.io/news/
+- type: Pricing
+  url: https://curity.io/pricing/
+- type: PrivacyPolicy
+  url: https://curity.io/resources/learn/privacy-and-gdpr/
+- type: StatusPage
+  url: https://status.curity.io/
+- type: TermsOfService
+  url: https://curity.io/terms-of-service/
+- type: LLMsTxt
+  url: https://curity.io/llms.txt
+
+apis:
+- aid: curity:restconf-admin-api
+  name: Curity RESTCONF Admin API
+  description: RESTCONF (RFC 8040) API on the Curity Identity Server admin service for reading and changing the
+    full server configuration; served by each self-hosted deployment.
+  humanURL: https://curity.io/docs/identity-server/administration/restconf
+  tags:
+  - Administration
+  - RESTCONF
+  - Configuration
+  properties:
+  - type: Documentation
+    url: https://curity.io/docs/identity-server/administration/restconf
+  - type: Video
+    url: https://curity.io/resources/videos/introduction-to-RESTCONF-admin.api/
+  - type: Tutorial
+    url: https://curity.io/resources/learn/access-rules-in-restconf/
+- aid: curity:graphql-apis
+  name: Curity GraphQL APIs
+  description: GraphQL APIs exposed by the Curity Identity Server for user management and dynamic client (DCR) management,
+    protected by OAuth access tokens.
+  humanURL: https://curity.io/docs/identity-server/developer-guide/graphql
+  tags:
+  - GraphQL
+  - User Management
+  - Client Management
+  properties:
+  - type: Documentation
+    url: https://curity.io/docs/identity-server/developer-guide/graphql
+  - type: Documentation
+    url: https://curity.io/docs/identity-server/administration/graphql
+  - type: Tutorial
+    url: https://curity.io/resources/learn/graphql-user-management/
+  - type: Tutorial
+    url: https://curity.io/resources/learn/graphql-client-management/
+- aid: curity:scim-2.0-api
+  name: Curity SCIM 2.0 API
+  description: SCIM 2.0 user provisioning endpoints served by the Curity Identity Server user management service.
+  humanURL: https://curity.io/resources/learn/managing-users-with-scim/
+  tags:
+  - SCIM
+  - Provisioning
+  - User Management
+  properties:
+  - type: Tutorial
+    url: https://curity.io/resources/learn/managing-users-with-scim/
+  - type: Tutorial
+    url: https://curity.io/resources/learn/user-provisioning-with-scim/
+- aid: curity:oauth-and-openid-connect
+  name: Curity OAuth and OpenID Connect
+  description: Standard OAuth 2.0 and OpenID Connect endpoints (authorize, token, introspection, userinfo, revocation,
+    dynamic registration, discovery) served by the Curity Identity Server token service.
+  humanURL: https://curity.io/docs/identity-server/developer-guide/
+  tags:
+  - OAuth
+  - OpenID Connect
+  - Tokens
+  properties:
+  - type: Documentation
+    url: https://curity.io/docs/identity-server/developer-guide/
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://curity.io
+    status: 200
