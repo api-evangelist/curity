@@ -15,7 +15,7 @@ x-type: company
 
 x-source: harvest:market-layer-gap
 
-x-tier: stub
+x-tier: profiled
 
 x-tier-reason: harvest
 
@@ -40,6 +40,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: IntegrationEdges
+  url: integrations/curity-integration-edges.yml
 - type: Compliance
   url: https://trust.curity.io/
 - type: LLMsTxt
@@ -149,3 +151,7 @@ x-coverage:
   evidence:
   - url: https://curity.io
     status: 200
+x-enrichment:
+  status: enriched
+  pass: local-v5
+  date: '2026-10-13'

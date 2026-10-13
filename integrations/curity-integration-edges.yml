@@ -1,16 +1,32 @@
 generated: '2026-10-13'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/curity/integrations
 - https://n8n.io/integrations/curity/
 - https://composio.dev/toolkits/curity
 - https://monid.ai/tools/curity
 checked:
+- https://azuremarketplace.microsoft.com/
 - https://composio.dev/toolkits/curity
 - https://monid.ai/tools/curity
 - https://n8n.io/integrations/curity/
 - https://zapier.com/apps/curity/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Curity
+  listing_count: 1
+  apps:
+  - Curity Identity Server
+  seller_name: Curity
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 templates: []

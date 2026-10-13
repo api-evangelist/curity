@@ -112,11 +112,14 @@ hosts:
   relation: own
 - host: trust.curity.io
   found_by:
+  - pointer
   - probed
   - site-links
   - well-known
-  types: []
+  types:
+  - Compliance
   serves: []
+  platform: eu.sprinto.com
   registrable_domain: curity.io
   role: other
   relation: own
