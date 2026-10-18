@@ -28,6 +28,13 @@ modified: '2026-10-13'
 tags:
 - Company
 - Identity
+- Authentication
+- OpenID Connect
+- Authorization
+- API Security
+tags_raw:
+- Company
+- Identity
 - OAuth
 - OpenID Connect
 - Authorization
@@ -133,6 +140,10 @@ apis:
     dynamic registration, discovery) served by the Curity Identity Server token service.
   humanURL: https://curity.io/docs/identity-server/developer-guide/
   tags:
+  - Authentication
+  - OpenID Connect
+  - Tokens
+  tags_raw:
   - OAuth
   - OpenID Connect
   - Tokens
