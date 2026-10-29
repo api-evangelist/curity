@@ -64,5 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Curity is a company surfaced via the API Evangelist harvest backlog (source: market-layer-gap) and added to the network as a stub for full-pipeline profiling.
-- https://curity.io
+Curity is a Stockholm-based identity company whose Curity Identity Server is a self-hosted OAuth 2.0 and OpenID Connect server. Its interfaces are the standard OAuth/OIDC endpoints, a RESTCONF administration API, GraphQL user and client management APIs, and SCIM 2.0 user provisioning, all served by each customer deployment rather than a Curity-hosted base URL.
+
+**Areas:** Company · Identity · Authentication · OpenID Connect · Authorization · API Security
+
+## Curity on APIs.io
+
+Everything profiled for Curity is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/curity/](https://apis.io/providers/curity/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Curity RESTCONF Admin API](https://apis.io/apis/curity/restconf-admin-api/) — RESTCONF (RFC 8040) API on the Curity Identity Server admin service for reading and changing the full server configuration; served by each self-hosted…
+- [Curity GraphQL APIs](https://apis.io/apis/curity/graphql-apis/) — GraphQL APIs exposed by the Curity Identity Server for user management and dynamic client (DCR) management, protected by OAuth access tokens.
+- [Curity SCIM 2.0 API](https://apis.io/apis/curity/scim-2.0-api/) — SCIM 2.0 user provisioning endpoints served by the Curity Identity Server user management service.
+- [Curity OAuth and OpenID Connect](https://apis.io/apis/curity/oauth-and-openid-connect/) — Standard OAuth 2.0 and OpenID Connect endpoints (authorize, token, introspection, userinfo, revocation, dynamic registration, discovery) served by the…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Curity Domain Security](https://apis.io/security/curity/curity-domain-security/)
+- [Curity Trust Center](https://apis.io/security/curity/curity-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://curity.io)
+- [Documentation](https://docs.curity.io/)
+- [Getting started](https://curity.io/resources/getting-started/)
+- [Pricing](https://curity.io/pricing/)
+- [Changelog](https://curity.io/resources/whats-new/)
+- [Blog](https://curity.io/blog/)
+- [Compliance](https://trust.curity.io/)
+- [Terms of service](https://curity.io/terms-of-service/)
+- [Privacy policy](https://curity.io/resources/learn/privacy-and-gdpr/)
+- [GitHub](https://github.com/curityio)
+- [Status](https://status.curity.io/)
+
+## API Evangelist rating
+
+**Kin Score 28.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 47.4 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/curity/](https://apis.io/providers/curity/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Curity: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/curity/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
